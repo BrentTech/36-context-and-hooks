@@ -1,41 +1,20 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## 36 Context and Hooks
 
-### Author: Student/Group Name
+### Author: Brent Woodward
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
-
-#### Documentation
-* [swagger](http://xyz.com) (API assignments only)
-* [jsdoc](http://xyz.com) (All assignments)
+* [repo](https://github.com/BrentTech/36-context-and-hooks)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
 
 ###### `foo(thing) -> string`
 Usage Notes or examples
 
 ###### `bar(array) -> array`
 Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
-
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
   
 #### Tests
 * How do you run tests?
@@ -44,3 +23,16 @@ Usage Notes or examples
 
 #### UML
 Link to an image of the UML for your application and response to events
+
+###### `index.js`
+Renders app.js to the DOM
+###### `src/components/app.js`
+Wraps components in Context Provider.
+###### `src/components/counter.js`
+Component that provides render function with JSX markup showing Counter state.
+###### `src/components/decrementer.js`
+Component that provides render function with JSX markup for button to change state
+###### `src/components/imcrementer.js`
+Component that provides render function with JSX markup for button to change state
+###### `src/settings/context.js`
+Manages and updates state. Gives children access to state as consumers.
